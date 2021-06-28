@@ -38,14 +38,25 @@ Firmware version applied on 22.200.15.0.210
    
    *./balong_flash -p /dev/ttyUSB0 Update_WEBUI_17.100.13.01.03_HILINK.exe*
    
-   In this mode *12d1:1442* you will have to flash the firmware again
+   In this mode *12d1:1442* you will also have to flash the firmware again
    
    *./balong_flash -p /dev/ttyUSB0 E3372h-607_Update_22.200.05.00.00_universal.exe* 
    
-   Bingo your downgrading and WebUI installation is complete. The modem will be reset and you can see the Wired connection is set up automatically in your Linux Network settings.
+   Bingo your downgrading and WebUI installation is complete. The modem will be reset and you can see the Wired connection is set up automatically in your Linux   Network settings.
    
    Now you can open your browser and go to http://192.168.8.1 and see the dashboard where it will ask for SIMUNLOCK CODE or NETWORK UNLOCK Code
    
-6. Calculate DATALOCK Code and NETWORK UNLOCK Code
-
+### 5. Calculate DATALOCK Code and NETWORK UNLOCK Code
+   After you have downgraded the firmware you are free to access the NVRAM from which we will extract data to caculate DATALOCK Code and the NETWORK CODE
+   
+   In the */etc/usb_modeswitch.conf* change the *DisableSwitching* variable to *1*
+   
+   Plugin the modem again and this time you will see modem in DataStorage mode *12d1:1f01* . Change the it to HuaweiAltMode by typing this command  
+  
+   *usb_modeswitch -v 12d1 -p 1f01 -W -X*
+  
+   
+   
+   
+   
 Congrats you have unlocked your modem !!
