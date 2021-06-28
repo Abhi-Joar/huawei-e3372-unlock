@@ -15,7 +15,8 @@ Firmware version applied on 22.200.15.0.210
   
   Once you shorted your modem properly you will enter into boot mode , check with *lsusb* and *dmesg* the device configuration should be *12d1:1443*  and in *dmesg* it should show as *USB CON HUAWEI* 
 
-2. Flash Safeloader  
+### 2. Flash Safeloader  
+   Flash Safeloader file *usblsafe_e3372h.bin* using *balong-usbdload* after compiling https://github.com/forth32/balong-usbdload
 
 3. Flash Downgrade Firmware
 
