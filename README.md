@@ -13,10 +13,14 @@ Firmware version applied on 22.200.15.0.210
   
   You have to open up your modem and short one of the pin to ground and insert it into usb while holding it in this shorted position. You can short the pin as shown in the figure with a compass or tweezers or small scissor. Hold it in this position for a minute. The led should be off , it should not blink , if it blinks then you have not shorted properly and you have to do it again.
   
-  Once you shorted your modem properly you will enter into boot mode , check with *lsusb* and *dmesg* the device configuration should be *12d1:1443*  and in *dmesg* it should show as *USB CON HUAWEI* 
+  Once you shorted your modem properly you will enter into boot mode , check with *lsusb* and *dmesg* the device configuration should be *12d1:1c01*  and in *dmesg* it should show as *USB CON HUAWEI*  
+  *ls /dev/ttyUSB\** should give *ttyUSB0*
 
 ### 2. Flash Safeloader  
    Flash Safeloader file *usblsafe_e3372h.bin* using *balong-usbdload* after compiling https://github.com/forth32/balong-usbdload
+   
+   Under root permission *./balong-usbdload -p /dev/ttyUSB0 usblsafe_e3372h.bin* will flash safeloader and the modem will enter into download mode after 10s-15s and led will start to blink  
+   
 
 3. Flash Downgrade Firmware
 
