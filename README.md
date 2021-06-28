@@ -83,5 +83,5 @@ Firmware version applied on 22.200.15.0.210
 
 #### Congrats you have unlocked your modem ####
 #### Send email to crackiitweb@gmail.com to get more help #### 
-#### THIS IS A FREE SERVICE HOWEVER IF IT IS HELPFUL YOU CAN DONATE paypal.me/jordertech  ####
+#### THIS IS A FREE SERVICE HOWEVER IF IT IS HELPFUL YOU CAN DONATE https://paypal.me/jordertech  ####
 
