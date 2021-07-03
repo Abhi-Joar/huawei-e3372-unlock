@@ -13,6 +13,8 @@ Firmware version applied on 22.200.15.0.210
   
   You have to open up your modem and short one of the pin to ground and insert it into usb while holding it in this shorted position. You can short the pin as shown in the figure with a compass or tweezers or small scissor. Hold it in this position for a minute. The led should be off , it should not blink , if it blinks then you have not shorted properly and you have to do it again.
   
+  ![3372h](https://user-images.githubusercontent.com/8363213/124347460-956e2100-dc02-11eb-9001-d6a6104653f4.png)
+  
   Once you shorted your modem properly you will enter into boot mode , check with *lsusb* and *dmesg* the device configuration should be *12d1:1c01*  and in *dmesg* it should show as *USB CON HUAWEI*  
   
   *ls /dev/ttyUSB\** should give *ttyUSB0*
